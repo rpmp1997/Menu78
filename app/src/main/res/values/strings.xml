@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">Menu78</string>
+    <string name="towntab_message">Escoja un pueblo de la lista para ver los restaurantes disponibles en el pueblo.</string>
+
+    <string-array name="TOWNS">
+        <item>Adjuntas</item>
+        <item>Aguada</item>
+        <item>Aguadilla</item>
+        <item>Aguas Buenas</item>
+        <item>Aibonito</item>
+        <item>Añasco</item>
+        <item>Arecibo</item>
+        <item> Arroyo</item>
+        <item>Barceloneta</item>
+        <item>Barranquitas</item>
+        <item>Bayamón</item>
+        <item>Cabo Rojo</item>
+        <item>Caguas</item>
+        <item>Camuy</item>
+        <item>Canóvanas</item>
+        <item>Carolina</item>
+        <item>Cataño</item>
+        <item>Cayey</item>
+        <item>Ceiba</item>
+        <item>Ciales</item>
+        <item>Cidra</item>
+        <item>Coamo</item>
+        <item>Comerio</item>
+        <item>Corozal</item>
+        <item>Culebra</item>
+        <item>Dorado</item>
+        <item>Fajardo</item>
+        <item>Florida</item>
+        <item>Guánica</item>
+        <item>Guayama</item>
+        <item>Guayanilla</item>
+        <item>Guaynabo</item>
+        <item>Gurabo</item>
+        <item>Hatillo</item>
+        <item>Hormigueros</item>
+        <item>Humacao</item>
+        <item>Isabela</item>
+        <item>Jayuya</item>
+        <item>Juana Díaz</item>
+        <item>Juncos</item>
+        <item>Lajas</item>
+        <item>Lares</item>
+        <item>Las Marías</item>
+        <item>Las Piedras</item>
+        <item>Loíza</item>
+        <item>Luquillo</item>
+        <item>Manatí</item>
+        <item>Maricao</item>
+        <item>Maunabo</item>
+        <item>Mayagüez</item>
+        <item>Moca</item>
+        <item>Morovis</item>
+        <item>Naguabo</item>
+        <item>Naranjito</item>
+        <item>Orocovis</item>
+        <item>Patillas</item>
+        <item>Peñuelas</item>
+        <item>Ponce</item>
+        <item>Quebradillas</item>
+        <item>Rincón</item>
+        <item>Río Grande</item>
+        <item>Sabana Grande</item>
+        <item>Salinas</item>
+        <item>San Germán</item>
+        <item>San Juan</item>
+        <item>San Lorenzo</item>
+        <item>San Sebastián</item>
+        <item>Santa Isabel</item>
+        <item>Toa Alta</item>
+        <item>Toa Baja</item>
+        <item>Trujillo Alto</item>
+        <item>Utuado</item>
+        <item>Vega Alta</item>
+        <item>Vega Baja</item>
+        <item>Vieques</item>
+        <item>Villalba</item>
+        <item>Yabucoa</item>
+        <item>Yauco</item>
+    </string-array>
+</resources>
