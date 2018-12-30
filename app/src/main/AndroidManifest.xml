@@ -2,6 +2,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.ramonmedina.menu78">
 
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -16,8 +24,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".List.RestaurantListActivity" />
-        <activity android:name=".Restaurant.RestaurantActivity"></activity>
+        <activity
+            android:name=".List.RestaurantListActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Restaurant.RestaurantActivity"
+            android:parentActivityName=".MainActivity" />
+
+        <!-- MAP ANDROID KEY -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDSFJKEPQ_hZFNuZu-LvWWKC-odBf2ruWw" />
+
+        <activity android:name=".Map.MapRestaurantActivity"
+            android:parentActivityName=".MainActivity"></activity>
     </application>
 
 </manifest>

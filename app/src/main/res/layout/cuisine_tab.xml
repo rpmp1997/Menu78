@@ -2,7 +2,77 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/GreetingCuisineTab"
+        android:text="Escoja un estilo de comida!"
+        android:textColor="#000000"
+        android:textStyle="italic"
+        android:textSize="28dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cuisinetabMessage"
+        android:text="@string/cuisinetab_message"
+        android:textColor="#000000"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="20dp"
+        android:layout_below="@id/GreetingCuisineTab"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/TownList"
+        android:layout_marginBottom="40dp"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="#D50000"
+        android:text="Criolla"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/cuisinetabMessage"
+        android:id="@+id/cuisineCriollaBtn"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="#D50000"
+        android:layout_marginTop="20dp"
+        android:text="Pasta"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/cuisineCriollaBtn"
+        android:id="@+id/cuisinePastaBtn"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="#D50000"
+        android:layout_marginTop="20dp"
+        android:text="Vegetariano"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/cuisinePastaBtn"
+        android:id="@+id/cuisineVegetarianoBtn"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="#D50000"
+        android:layout_marginTop="20dp"
+        android:text="Otro"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/cuisineVegetarianoBtn"
+        android:id="@+id/cuisineOtroBtn"/>
 
 
 

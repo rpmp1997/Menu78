@@ -25,8 +25,12 @@ import com.example.ramonmedina.menu78.R;
  */
 
 public class TownTab extends Fragment {
+
     private static final String TAG = "Tab1Fragment";
     private Spinner spinner;
+    private Button townTabButton;
+    public Intent intent;
+    public boolean intentHasValue = false;
 
 
     @Nullable
@@ -38,6 +42,7 @@ public class TownTab extends Fragment {
         final String[] TownsPR = view.getResources().getStringArray(R.array.TOWNS);
 
         spinner = (Spinner)view.findViewById(R.id.TownList);
+        townTabButton = (Button)view.findViewById(R.id.TownTabButton);
         //Attaches spinner to TownsPR
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_spinner_item, TownsPR);
 
@@ -46,7 +51,6 @@ public class TownTab extends Fragment {
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent intent = new Intent();
                 switch (i) {
                     case 0:
                         Toast.makeText(getContext(), "Not Available", Toast.LENGTH_SHORT);
@@ -57,7 +61,7 @@ public class TownTab extends Fragment {
                     case 2:
                         intent = new Intent(view.getContext(), RestaurantListActivity.class);
                         intent.putExtra("TownSent", String.valueOf(i));
-                        startActivity(intent);
+                        intentHasValue = true;
                         break;
                 }
 
@@ -66,6 +70,17 @@ public class TownTab extends Fragment {
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {
 
+            }
+        });
+
+        townTabButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                if (intentHasValue == false)
+                    Toast.makeText(view.getContext(), "Seleccione un pueblo", Toast.LENGTH_SHORT).show();
+                else
+                    startActivity(intent);
             }
         });
 

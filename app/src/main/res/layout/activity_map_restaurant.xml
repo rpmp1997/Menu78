@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.ramonmedina.menu78.Restaurant.RestaurantActivity">
-
+    tools:context="com.example.ramonmedina.menu78.Map.MapRestaurantActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -17,27 +16,26 @@
             android:layout_height="wrap_content"
             xmlns:card_view="http://schemas.android.com/apk/res-auto">
 
-
             <ImageView
-                    android:id="@+id/imgPuebloRestaurant"
-                    android:layout_width="match_parent"
-                    android:layout_height="235dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true" />
+                android:id="@+id/imgMapRestaurant"
+                android:layout_width="match_parent"
+                android:layout_height="235dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true" />
 
             <android.support.v7.widget.CardView
                 xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/card_view_name"
+                android:id="@+id/map_card_view_name"
                 android:layout_gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:layout_below="@+id/imgPuebloRestaurant"
+                android:layout_below="@+id/imgMapRestaurant"
                 card_view:cardCornerRadius="4dp">
 
                 <TextView
-                    android:id="@+id/NamePueblo"
+                    android:id="@+id/NameMapa"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="Nombre: "
@@ -46,27 +44,27 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/nombrePueblo"
+                    android:id="@+id/nombreMapa"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="35dp"
-                    android:layout_below="@+id/NamePueblo" />
+                    android:layout_below="@+id/NameMapa" />
 
             </android.support.v7.widget.CardView>
             <android.support.v7.widget.CardView
                 xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/card_view_description"
+                android:id="@+id/map_card_view_description"
                 android:layout_gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:layout_below="@+id/card_view_name"
+                android:layout_below="@+id/map_card_view_name"
                 android:layout_marginTop="20dp"
                 card_view:cardCornerRadius="4dp">
 
                 <TextView
-                    android:id="@+id/DescriptionPueblo"
+                    android:id="@+id/DescriptionMapa"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Description: "
@@ -75,27 +73,27 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/descParraPueblo"
+                    android:id="@+id/descParraMapa"
                     android:layout_width="wrap_content"
                     android:layout_marginTop="35dp"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/DescriptionPueblo" />
+                    android:layout_below="@+id/DescriptionMapa" />
 
             </android.support.v7.widget.CardView>
             <android.support.v7.widget.CardView
                 xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/card_view_localizacion"
+                android:id="@+id/map_card_view_localizacion"
                 android:layout_gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:layout_below="@+id/card_view_description"
+                android:layout_below="@+id/map_card_view_description"
                 android:layout_marginTop="20dp"
                 card_view:cardCornerRadius="4dp">
 
                 <TextView
-                    android:id="@+id/LocaclizacionPueblo"
+                    android:id="@+id/LocaclizacionMapa"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/descParraPueblo"
@@ -105,27 +103,27 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/locaPueblo"
+                    android:id="@+id/locaMapa"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="35dp"
-                    android:layout_below="@+id/LocaclizacionPueblo" />
+                    android:layout_below="@+id/LocaclizacionMapa" />
 
             </android.support.v7.widget.CardView>
             <android.support.v7.widget.CardView
                 xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/card_view_category"
+                android:id="@+id/map_card_view_category"
                 android:layout_gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:layout_below="@+id/card_view_localizacion"
+                android:layout_below="@+id/map_card_view_localizacion"
                 android:layout_marginTop="20dp"
                 card_view:cardCornerRadius="4dp">
 
-                 <TextView
-                    android:id="@+id/CategoriasPueblo"
+                <TextView
+                    android:id="@+id/CategoriasMapa"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Categorias: "
@@ -134,25 +132,15 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/catePueblo"
+                    android:id="@+id/cateMapa"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="35dp"
-                    android:layout_below="@+id/CategoriasPueblo" />
+                    android:layout_below="@+id/CategoriasMapa" />
             </android.support.v7.widget.CardView>
 
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/card_view_category"
-                    android:textColor="#ffffff"
-                    android:layout_marginTop="10dp"
-                    android:text="Buscar en Mapa"
-                    android:id="@+id/PuebloBtn"
-                    android:background="#D50000" />
         </RelativeLayout>
     </ScrollView>
-
 
 </android.support.constraint.ConstraintLayout>

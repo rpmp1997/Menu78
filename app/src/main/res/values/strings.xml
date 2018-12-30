@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Menu78</string>
     <string name="towntab_message">Escoja un pueblo de la lista para ver los restaurantes disponibles en el pueblo.</string>
+    <string name="cuisinetab_message">Escoja un estilo de comida para ver los restaurantes que ofrecen comida de ese estilo o similar.</string>
 
     <string-array name="TOWNS">
         <item>Adjuntas</item>
